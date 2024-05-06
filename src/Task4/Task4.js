@@ -1,3 +1,10 @@
+/**
+ * Creates a debounced version of a function that will delay its execution until specified delay.
+ *
+ * @param {function} func - The function to be debounced.
+ * @param {number} delay - The delay in milliseconds.
+ * @return {function} - The debounced function.
+ */
 function debounce(func, delay) {
     let timeout;
     return function(...args) {

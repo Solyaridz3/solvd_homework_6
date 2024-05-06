@@ -4,6 +4,12 @@ return a + b;
 }
 `;
 
+/**
+ * Splits and formats the given strings, adding line numbers in the beginning.
+ *
+ * @param {Array<string>} giverStrings - The array of strings to be formatted.
+ * @return {string} - The formatted string with line numbers.
+ */
 function multiline(giverStrings) {
     const seperatedStrings = giverStrings
         .join('')

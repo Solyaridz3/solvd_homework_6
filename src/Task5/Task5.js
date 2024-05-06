@@ -6,6 +6,16 @@ function onScroll(event) {
     console.log("Scroll event:", event);
 }
 
+/**
+ * Creates a throttled version of the given function that will allow to execute function
+ * at most once within specified time interval.
+ * It will ignore function invocation if the interval has not elapsed.
+ *
+ *
+ * @param {function} func - The function to be throttled.
+ * @param {number} interval - The interval in milliseconds.
+ * @return {function} - The throttled function.
+ */
 function throttle(func, interval) {
     let timer = null;
     return (...args) => {

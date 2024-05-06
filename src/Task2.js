@@ -1,3 +1,10 @@
+/**
+ * A function that highlights keywords in a template.
+ *
+ * @param {string} template - The template string to highlight keywords in.
+ * @param {Array<string>} keywords - An array of keywords to be highlighted.
+ * @return {string} - The template string with keywords highlighted.
+ */
 function highlightKeywords(template, keywords) {
     let result = template;
     keywords.forEach((keyword, i) => {

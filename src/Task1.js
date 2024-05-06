@@ -10,6 +10,13 @@ const translations = {
 };
 
 
+/**
+ * A function that localizes strings based on keys and translations.
+ *
+ * @param {Array} strings - The array of strings to be localized.
+ * @param  {...string} keys - The keys used for localization.
+ * @return {string} - The localized string.
+ */
 function localize(strings, ...keys) {
     return strings.map((string, i) => strings[i] + (translations[language][keys[i]] || '')).join('');
 }
